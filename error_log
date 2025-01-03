@@ -1,0 +1,669 @@
+[09-Nov-2020 09:20:00 Asia/Ho_Chi_Minh] An Error occurred while handling another error:
+PDOException: SQLSTATE[HY000] [1044] Access denied for user 'bat_dong_san_viet_hung'@'148.66.133.222' to database 'bat_dong_san_viet_hung' in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php:698
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(698): PDO->__construct('mysql:host=148....', 'bat_dong_san_vi...', '%iQ%FnCA+x{@', NULL)
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(1015): yii\db\Connection->open()
+#3 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Schema.php(462): yii\db\Connection->getSlavePdo()
+#5 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(894): yii\db\Schema->quoteValue('Ch\xE1\xBB\x9D nh\xE1\xBA\xADn')
+#6 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('Ch\xE1\xBB\x9D nh\xE1\xBA\xADn')
+#7 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#8 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/minhhiencom/public_html/viethung/common/models/VietHungAPI.php(67): yii\db\Command->queryAll()
+#11 /home/minhhiencom/public_html/viethung/backend/themes/qltk2/layouts/header.php(8): common\models\VietHungAPI->getSoLuongYeuCauChoChapNhanChiaSe()
+#12 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(348): require('/home/minhhienc...')
+#13 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/minhhienc...', Array)
+#14 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/minhhienc...', Array, NULL)
+#15 /home/minhhiencom/public_html/viethung/backend/themes/qltk2/layouts/main.php(39): yii\base\View->render('header.php', Array)
+#16 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(348): require('/home/minhhienc...')
+#17 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/minhhienc...', Array)
+#18 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(401): yii\base\View->renderFile('/home/minhhienc...', Array, Object(backend\controllers\SiteController))
+#19 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(387): yii\base\Controller->renderContent('\n<div class="al...')
+#20 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#21 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#27 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#29 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1044] Access denied for user 'bat_dong_san_viet_hung'@'148.66.133.222' to database 'bat_dong_san_viet_hung' in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php:635
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(1015): yii\db\Connection->open()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(1002): yii\db\Connection->getMasterPdo()
+#2 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Schema.php(462): yii\db\Connection->getSlavePdo()
+#3 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(894): yii\db\Schema->quoteValue('Ch\xE1\xBB\x9D nh\xE1\xBA\xADn')
+#4 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('Ch\xE1\xBB\x9D nh\xE1\xBA\xADn')
+#5 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#6 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/minhhiencom/public_html/viethung/common/models/VietHungAPI.php(67): yii\db\Command->queryAll()
+#9 /home/minhhiencom/public_html/viethung/backend/themes/qltk2/layouts/header.php(8): common\models\VietHungAPI->getSoLuongYeuCauChoChapNhanChiaSe()
+#10 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(348): require('/home/minhhienc...')
+#11 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/minhhienc...', Array)
+#12 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/minhhienc...', Array, NULL)
+#13 /home/minhhiencom/public_html/viethung/backend/themes/qltk2/layouts/main.php(39): yii\base\View->render('header.php', Array)
+#14 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(348): require('/home/minhhienc...')
+#15 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/minhhienc...', Array)
+#16 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(401): yii\base\View->renderFile('/home/minhhienc...', Array, Object(backend\controllers\SiteController))
+#17 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(387): yii\base\Controller->renderContent('\n<div class="al...')
+#18 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#19 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#20 [internal function]: yii\web\ErrorAction->run()
+#21 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#22 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#23 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#24 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#25 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#26 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#27 {main}
+Additional Information:
+
+Previous exception:
+yii\web\ForbiddenHttpException: Yêu cầu đăng nhập in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/User.php:454
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Controller.php(185): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/minhhiencom/public_html/viethung/index.php(22): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTPS' => 'on',
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi,en-US;q=0.9,en;q=0.8',
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_CDN_LOOP' => 'cloudflare',
+    'HTTP_CF_CONNECTING_IP' => '14.181.117.147',
+    'HTTP_CF_IPCOUNTRY' => 'VN',
+    'HTTP_CF_RAY' => '5ef40d572e1c0ad0-NRT',
+    'HTTP_CF_REQUEST_ID' => '064c66aa7c00000ad0f811b000000001',
+    'HTTP_CF_VISITOR' => '{"scheme":"https"}',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'HTTP_COOKIE' => '__cfduid=d817406c94343456263df0e2f2f4d2a6d1602727092; advanced-backend=14528a51700e08fbf4f01a6fecd0fcc9; _csrf-backend=291a23d8b942f04d3d260cfb3e0033f185484640887d74023cdafbc310d4de93a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22t1C1Jmvndllovj8WvnuIc0OD7MM0GPiq%22%3B%7D; __cf_bm=825690b1ea2c55731e5c520425a48a0704ac2c16-1604888398-1800-AT9pXnyi0+yYrRyC4B10AzZMS9RZAtmMR1/a4lKzcYX6',
+    'HTTP_HOST' => 'viethung.minhhien.com.vn',
+    'HTTP_REFERER' => 'https://viethung.minhhien.com.vn/index.php?r=site%2Flogin',
+    'HTTP_SEC_FETCH_DEST' => 'image',
+    'HTTP_SEC_FETCH_MODE' => 'no-cors',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36',
+    'HTTP_X_FORWARDED_FOR' => '14.181.117.147',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php71/root/etc:/opt/cpanel/ea-php71/root/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_HTTP_AUTHORIZATION' => '',
+    'REDIRECT_REQUEST_METHOD' => 'GET',
+    'REDIRECT_SSL_TLS_SNI' => 'viethung.minhhien.com.vn',
+    'REDIRECT_STATUS' => '404',
+    'REDIRECT_UNIQUE_ID' => 'X6inUHRo4b1Q7De9oEOxmAAAAUM',
+    'REDIRECT_URL' => '/favicon.ico',
+    'REDIRECT_protossl' => 's',
+    'REMOTE_ADDR' => '162.158.119.191',
+    'REMOTE_PORT' => '50344',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/favicon.ico',
+    'SCRIPT_FILENAME' => '/home/minhhiencom/public_html/viethung/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '148.66.133.222',
+    'SERVER_ADMIN' => 'webmaster@viethung.minhhien.com.vn',
+    'SERVER_NAME' => 'viethung.minhhien.com.vn',
+    'SERVER_PORT' => '443',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SSL_TLS_SNI' => 'viethung.minhhien.com.vn',
+    'TZ' => 'Asia/Ho_Chi_Minh',
+    'UNIQUE_ID' => 'X6inUHRo4b1Q7De9oEOxmAAAAUM',
+    'protossl' => 's',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1604888400.772161006927490234375,
+    'REQUEST_TIME' => 1604888400,
+    'argv' => [],
+    'argc' => 0,
+]
+[09-Nov-2020 09:20:04 Asia/Ho_Chi_Minh] An Error occurred while handling another error:
+PDOException: SQLSTATE[HY000] [1044] Access denied for user 'bat_dong_san_viet_hung'@'148.66.133.222' to database 'bat_dong_san_viet_hung' in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php:698
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(698): PDO->__construct('mysql:host=148....', 'bat_dong_san_vi...', '%iQ%FnCA+x{@', NULL)
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(1015): yii\db\Connection->open()
+#3 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Schema.php(462): yii\db\Connection->getSlavePdo()
+#5 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(894): yii\db\Schema->quoteValue('Ch\xE1\xBB\x9D nh\xE1\xBA\xADn')
+#6 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('Ch\xE1\xBB\x9D nh\xE1\xBA\xADn')
+#7 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#8 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#9 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#10 /home/minhhiencom/public_html/viethung/common/models/VietHungAPI.php(67): yii\db\Command->queryAll()
+#11 /home/minhhiencom/public_html/viethung/backend/themes/qltk2/layouts/header.php(8): common\models\VietHungAPI->getSoLuongYeuCauChoChapNhanChiaSe()
+#12 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(348): require('/home/minhhienc...')
+#13 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/minhhienc...', Array)
+#14 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/minhhienc...', Array, NULL)
+#15 /home/minhhiencom/public_html/viethung/backend/themes/qltk2/layouts/main.php(39): yii\base\View->render('header.php', Array)
+#16 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(348): require('/home/minhhienc...')
+#17 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/minhhienc...', Array)
+#18 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(401): yii\base\View->renderFile('/home/minhhienc...', Array, Object(backend\controllers\SiteController))
+#19 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(387): yii\base\Controller->renderContent('\n<div class="al...')
+#20 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#21 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#22 [internal function]: yii\web\ErrorAction->run()
+#23 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#24 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#25 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#26 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#27 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#28 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#29 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1044] Access denied for user 'bat_dong_san_viet_hung'@'148.66.133.222' to database 'bat_dong_san_viet_hung' in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php:635
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(1015): yii\db\Connection->open()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(1002): yii\db\Connection->getMasterPdo()
+#2 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Schema.php(462): yii\db\Connection->getSlavePdo()
+#3 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Connection.php(894): yii\db\Schema->quoteValue('Ch\xE1\xBB\x9D nh\xE1\xBA\xADn')
+#4 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('Ch\xE1\xBB\x9D nh\xE1\xBA\xADn')
+#5 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(1115): yii\db\Command->getRawSql()
+#6 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(1136): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#8 /home/minhhiencom/public_html/viethung/common/models/VietHungAPI.php(67): yii\db\Command->queryAll()
+#9 /home/minhhiencom/public_html/viethung/backend/themes/qltk2/layouts/header.php(8): common\models\VietHungAPI->getSoLuongYeuCauChoChapNhanChiaSe()
+#10 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(348): require('/home/minhhienc...')
+#11 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/minhhienc...', Array)
+#12 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/minhhienc...', Array, NULL)
+#13 /home/minhhiencom/public_html/viethung/backend/themes/qltk2/layouts/main.php(39): yii\base\View->render('header.php', Array)
+#14 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(348): require('/home/minhhienc...')
+#15 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/minhhienc...', Array)
+#16 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(401): yii\base\View->renderFile('/home/minhhienc...', Array, Object(backend\controllers\SiteController))
+#17 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(387): yii\base\Controller->renderContent('\n<div class="al...')
+#18 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorAction.php(139): yii\base\Controller->render('error', Array)
+#19 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorAction.php(118): yii\web\ErrorAction->renderHtmlResponse()
+#20 [internal function]: yii\web\ErrorAction->run()
+#21 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#22 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#23 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('error', Array)
+#24 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorHandler.php(109): yii\base\Module->runAction('site/error')
+#25 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\ForbiddenHttpException))
+#26 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\ForbiddenHttpException))
+#27 {main}
+Additional Information:
+
+Previous exception:
+yii\web\ForbiddenHttpException: Yêu cầu đăng nhập in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/User.php:454
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/filters/AccessControl.php(156): yii\web\User->loginRequired()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/filters/AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#2 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(276): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Controller.php(185): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Controller.php(155): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#9 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#10 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /home/minhhiencom/public_html/viethung/index.php(22): yii\base\Application->run()
+#12 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTPS' => 'on',
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi,en-US;q=0.9,en;q=0.8',
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_CDN_LOOP' => 'cloudflare',
+    'HTTP_CF_CONNECTING_IP' => '14.181.117.147',
+    'HTTP_CF_IPCOUNTRY' => 'VN',
+    'HTTP_CF_RAY' => '5ef40d6d2b5a0ad0-NRT',
+    'HTTP_CF_REQUEST_ID' => '064c66b83e00000ad035bb8000000001',
+    'HTTP_CF_VISITOR' => '{"scheme":"https"}',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'HTTP_COOKIE' => '__cfduid=d817406c94343456263df0e2f2f4d2a6d1602727092; advanced-backend=14528a51700e08fbf4f01a6fecd0fcc9; _csrf-backend=291a23d8b942f04d3d260cfb3e0033f185484640887d74023cdafbc310d4de93a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22t1C1Jmvndllovj8WvnuIc0OD7MM0GPiq%22%3B%7D; __cf_bm=a99ab5b5255239b5201287a540ad90eae449582c-1604888400-1800-Aexxh9qkhvO5P+iMf3X6dRlBDl/MruO4dgSFYMwt6TZiasYBALu5ywEDhUl7BhfvIWlv5wR11HN0HxLCUtgGD4WRgjT3a+xcsKvDATO1BnZf6yAJ4IanM/62chnIa+TSj2hZLfZyfNLRa9KbOeAyhj8=',
+    'HTTP_HOST' => 'viethung.minhhien.com.vn',
+    'HTTP_REFERER' => 'https://viethung.minhhien.com.vn/index.php?r=site%2Flogin',
+    'HTTP_SEC_FETCH_DEST' => 'image',
+    'HTTP_SEC_FETCH_MODE' => 'no-cors',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36',
+    'HTTP_X_FORWARDED_FOR' => '14.181.117.147',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php71/root/etc:/opt/cpanel/ea-php71/root/etc/php.d:.',
+    'QUERY_STRING' => '',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_HTTP_AUTHORIZATION' => '',
+    'REDIRECT_REQUEST_METHOD' => 'GET',
+    'REDIRECT_SSL_TLS_SNI' => 'viethung.minhhien.com.vn',
+    'REDIRECT_STATUS' => '404',
+    'REDIRECT_UNIQUE_ID' => 'X6inVHRo4b1Q7De9oEOxmgAAAUU',
+    'REDIRECT_URL' => '/favicon.ico',
+    'REDIRECT_protossl' => 's',
+    'REMOTE_ADDR' => '162.158.119.191',
+    'REMOTE_PORT' => '55968',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/favicon.ico',
+    'SCRIPT_FILENAME' => '/home/minhhiencom/public_html/viethung/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '148.66.133.222',
+    'SERVER_ADMIN' => 'webmaster@viethung.minhhien.com.vn',
+    'SERVER_NAME' => 'viethung.minhhien.com.vn',
+    'SERVER_PORT' => '443',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SSL_TLS_SNI' => 'viethung.minhhien.com.vn',
+    'TZ' => 'Asia/Ho_Chi_Minh',
+    'UNIQUE_ID' => 'X6inVHRo4b1Q7De9oEOxmgAAAUU',
+    'protossl' => 's',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1604888404.300406932830810546875,
+    'REQUEST_TIME' => 1604888404,
+    'argv' => [],
+    'argc' => 0,
+]
+[15-Dec-2020 16:51:07 Asia/Ho_Chi_Minh] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/minhhiencom/public_html/viethung/backend/controllers/SiteController.php on line 145. in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/minhhiencom/public_html/viethung/backend/controllers/SiteController.php on line 145. in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/minhhiencom/public_html/viethung/index.php(22): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '178',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTPS' => 'on',
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01',
+    'HTTP_ACCEPT_ENCODING' => 'gzip',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_CDN_LOOP' => 'cloudflare',
+    'HTTP_CF_CONNECTING_IP' => '2405:4803:ebf6:f250:c42b:aef1:489e:972a',
+    'HTTP_CF_IPCOUNTRY' => 'VN',
+    'HTTP_CF_RAY' => '601f43a38eb80182-SIN',
+    'HTTP_CF_REQUEST_ID' => '0707689a37000001828e0b9000000001',
+    'HTTP_CF_VISITOR' => '{"scheme":"https"}',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'HTTP_COOKIE' => '__cfduid=d3cce4c2f590fbeff93cdb31ccc0e26911608025683; __cf_bm=e1bcb271461239d9e14e5bb93f5a4bc66ace747f-1608025685-1800-AZ38lakTZTN5Z2teIOOarCoPWdELHCDyW79ORvlgB8eOLmFNqRPGNJb+hKsIQ948D8WNG4oyJV4ysZTm6EHGEbAxishk3s8NzRSnZT5oWkfCtUuhaDE1HluwfKMyPV1Frw==; advanced-backend=6d2416dd3a954c7d353bf2af667dadbf; _identity-backend=e561b89ad441fda887c6a837c26040774e213a5d9e9f3f366f5fe02d983b23b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=8590817f24e8ba1ec993476035946b300d667bf14bed3a1ee82277d484f69efda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22UOQkbP3ste5IvuCDfBszFlpStyoCQH5O%22%3B%7D',
+    'HTTP_HOST' => 'viethung.minhhien.com.vn',
+    'HTTP_ORIGIN' => 'https://viethung.minhhien.com.vn',
+    'HTTP_REFERER' => 'https://viethung.minhhien.com.vn/index.php?r=san-pham%2Findex',
+    'HTTP_SAVE_DATA' => 'on',
+    'HTTP_SEC_FETCH_DEST' => 'empty',
+    'HTTP_SEC_FETCH_MODE' => 'cors',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 10; SM-G975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'vx0D-PVZC_PkMgotlHcwzdVTRWN4FvC_OEXn8Di7e73qUlKTlwk4gJBXP2TiAnOJsxE2GT56gOxMPIizafNO8g==',
+    'HTTP_X_FORWARDED_FOR' => '2405:4803:ebf6:f250:c42b:aef1:489e:972a',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php71/root/etc:/opt/cpanel/ea-php71/root/etc/php.d:.',
+    'QUERY_STRING' => 'r=site/doimatkhau',
+    'REDIRECT_STATUS' => '200',
+    'REMOTE_ADDR' => '162.158.165.158',
+    'REMOTE_PORT' => '33574',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/index.php?r=site/doimatkhau',
+    'SCRIPT_FILENAME' => '/home/minhhiencom/public_html/viethung/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '148.66.133.222',
+    'SERVER_ADMIN' => 'webmaster@viethung.minhhien.com.vn',
+    'SERVER_NAME' => 'viethung.minhhien.com.vn',
+    'SERVER_PORT' => '443',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SSL_TLS_SNI' => 'viethung.minhhien.com.vn',
+    'TZ' => 'Asia/Ho_Chi_Minh',
+    'UNIQUE_ID' => 'X9iHCjeTxnF1qJ5kdHtmRgAAAUQ',
+    'protossl' => 's',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1608025866.915255069732666015625,
+    'REQUEST_TIME' => 1608025866,
+    'argv' => [
+        'r=site/doimatkhau',
+    ],
+    'argc' => 1,
+]
+[10-Apr-2021 08:50:20 Asia/Ho_Chi_Minh] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/helpers/BaseVarDumper.php on line 38. in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/helpers/BaseVarDumper.php on line 38. in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/minhhiencom/public_html/viethung/index.php(22): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTPS' => 'on',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_ENCODING' => 'gzip',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi',
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CDN_LOOP' => 'cloudflare',
+    'HTTP_CF_CONNECTING_IP' => '14.175.39.148',
+    'HTTP_CF_IPCOUNTRY' => 'VN',
+    'HTTP_CF_RAY' => '63d852dede6f1904-SIN',
+    'HTTP_CF_REQUEST_ID' => '095b121f4900001904a29c9000000001',
+    'HTTP_CF_VISITOR' => '{"scheme":"https"}',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'HTTP_COOKIE' => '_identity-backend=e561b89ad441fda887c6a837c26040774e213a5d9e9f3f366f5fe02d983b23b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _ga=GA1.3.1225740079.1617357035; _fbp=fb.2.1617357036343.1781882541; __gads=ID=64acf5dbf48f8d32-2249f79df1c60042:T=1617357036:RT=1617357036:S=ALNI_MZjMOkzwsKpQfrMIbpkV1MhkU1U2w; __cfduid=d263c719ba636a088fdfd95639c958a311617785811; advanced-backend=b4c8680fc59be3667c39f10fe8af1c52; _csrf-backend=4fc8cc1ec33a2f919fc62d3e136b9903708630a249cf03dc3a613d5c33833b59a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22jjLslDz44iqAYBBYhIru2-HmaOT25HbI%22%3B%7D; __cf_bm=32a7d8714a787bfd30344ae95bb649a767ed03c8-1618019090-1800-ASnBQZdQIDvLYxCCqHxGtCYHosH0XyBh62pNcaLxMxYol9eg47/RFQcLBFB8BQa6F+ZXD3xp3xfOzgdeZb9ENa0+Rub5DRdBlv1hAsW2E/40FGFEtxyGKUHrGQ9iw1nvwg==',
+    'HTTP_HOST' => 'viethung.minhhien.com.vn',
+    'HTTP_SEC_CH_UA' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36',
+    'HTTP_X_FORWARDED_FOR' => '14.175.39.148',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php71/root/etc:/opt/cpanel/ea-php71/root/etc/php.d:.',
+    'QUERY_STRING' => 'r=tai-chinh%2Ftest',
+    'REDIRECT_STATUS' => '200',
+    'REMOTE_ADDR' => '162.158.166.115',
+    'REMOTE_PORT' => '30622',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/index.php?r=tai-chinh%2Ftest',
+    'SCRIPT_FILENAME' => '/home/minhhiencom/public_html/viethung/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '148.66.133.222',
+    'SERVER_ADMIN' => 'webmaster@viethung.minhhien.com.vn',
+    'SERVER_NAME' => 'viethung.minhhien.com.vn',
+    'SERVER_PORT' => '443',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SSL_TLS_SNI' => 'viethung.minhhien.com.vn',
+    'TZ' => 'Asia/Ho_Chi_Minh',
+    'UNIQUE_ID' => 'YHEEXFaHtxqy1y4pbs6d4wAAAFQ',
+    'protossl' => 's',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1618019420.082562923431396484375,
+    'REQUEST_TIME' => 1618019420,
+    'argv' => [
+        'r=tai-chinh%2Ftest',
+    ],
+    'argc' => 1,
+]
+[10-Apr-2021 08:53:08 Asia/Ho_Chi_Minh] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/helpers/BaseVarDumper.php on line 38. in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/helpers/BaseVarDumper.php on line 38. in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/minhhiencom/public_html/viethung/index.php(22): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTPS' => 'on',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_ACCEPT_ENCODING' => 'gzip',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi',
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CDN_LOOP' => 'cloudflare',
+    'HTTP_CF_CONNECTING_IP' => '14.175.39.148',
+    'HTTP_CF_IPCOUNTRY' => 'VN',
+    'HTTP_CF_RAY' => '63d856fb09a518a3-SIN',
+    'HTTP_CF_REQUEST_ID' => '095b14b0e0000018a3f438d000000001',
+    'HTTP_CF_VISITOR' => '{"scheme":"https"}',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'HTTP_COOKIE' => '_identity-backend=e561b89ad441fda887c6a837c26040774e213a5d9e9f3f366f5fe02d983b23b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _ga=GA1.3.1225740079.1617357035; _fbp=fb.2.1617357036343.1781882541; __gads=ID=64acf5dbf48f8d32-2249f79df1c60042:T=1617357036:RT=1617357036:S=ALNI_MZjMOkzwsKpQfrMIbpkV1MhkU1U2w; __cfduid=d263c719ba636a088fdfd95639c958a311617785811; advanced-backend=b4c8680fc59be3667c39f10fe8af1c52; _csrf-backend=4fc8cc1ec33a2f919fc62d3e136b9903708630a249cf03dc3a613d5c33833b59a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22jjLslDz44iqAYBBYhIru2-HmaOT25HbI%22%3B%7D; __cf_bm=32a7d8714a787bfd30344ae95bb649a767ed03c8-1618019090-1800-ASnBQZdQIDvLYxCCqHxGtCYHosH0XyBh62pNcaLxMxYol9eg47/RFQcLBFB8BQa6F+ZXD3xp3xfOzgdeZb9ENa0+Rub5DRdBlv1hAsW2E/40FGFEtxyGKUHrGQ9iw1nvwg==',
+    'HTTP_HOST' => 'viethung.minhhien.com.vn',
+    'HTTP_SEC_CH_UA' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36',
+    'HTTP_X_FORWARDED_FOR' => '14.175.39.148',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php71/root/etc:/opt/cpanel/ea-php71/root/etc/php.d:.',
+    'QUERY_STRING' => 'r=tai-chinh%2Ftest',
+    'REDIRECT_STATUS' => '200',
+    'REMOTE_ADDR' => '172.69.135.222',
+    'REMOTE_PORT' => '26038',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/index.php?r=tai-chinh%2Ftest',
+    'SCRIPT_FILENAME' => '/home/minhhiencom/public_html/viethung/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '148.66.133.222',
+    'SERVER_ADMIN' => 'webmaster@viethung.minhhien.com.vn',
+    'SERVER_NAME' => 'viethung.minhhien.com.vn',
+    'SERVER_PORT' => '443',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SSL_TLS_SNI' => 'viethung.minhhien.com.vn',
+    'TZ' => 'Asia/Ho_Chi_Minh',
+    'UNIQUE_ID' => 'YHEFBMA1PImBFkwivwM7EQAAAUQ',
+    'protossl' => 's',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1618019588.425446987152099609375,
+    'REQUEST_TIME' => 1618019588,
+    'argv' => [
+        'r=tai-chinh%2Ftest',
+    ],
+    'argc' => 1,
+]
+[10-Apr-2021 08:57:06 Asia/Ho_Chi_Minh] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/helpers/BaseVarDumper.php on line 38. in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/helpers/BaseVarDumper.php on line 38. in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/minhhiencom/public_html/viethung/index.php(22): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '161',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTPS' => 'on',
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01',
+    'HTTP_ACCEPT_ENCODING' => 'gzip',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi',
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_CDN_LOOP' => 'cloudflare',
+    'HTTP_CF_CONNECTING_IP' => '14.175.39.148',
+    'HTTP_CF_IPCOUNTRY' => 'VN',
+    'HTTP_CF_RAY' => '63d85cc7f9cf0b00-NRT',
+    'HTTP_CF_REQUEST_ID' => '095b1850f700000b00ff9fb000000001',
+    'HTTP_CF_VISITOR' => '{"scheme":"https"}',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'HTTP_COOKIE' => '_identity-backend=e561b89ad441fda887c6a837c26040774e213a5d9e9f3f366f5fe02d983b23b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _ga=GA1.3.1225740079.1617357035; _fbp=fb.2.1617357036343.1781882541; __gads=ID=64acf5dbf48f8d32-2249f79df1c60042:T=1617357036:RT=1617357036:S=ALNI_MZjMOkzwsKpQfrMIbpkV1MhkU1U2w; __cfduid=d263c719ba636a088fdfd95639c958a311617785811; advanced-backend=b4c8680fc59be3667c39f10fe8af1c52; _csrf-backend=4fc8cc1ec33a2f919fc62d3e136b9903708630a249cf03dc3a613d5c33833b59a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22jjLslDz44iqAYBBYhIru2-HmaOT25HbI%22%3B%7D; __cf_bm=32a7d8714a787bfd30344ae95bb649a767ed03c8-1618019090-1800-ASnBQZdQIDvLYxCCqHxGtCYHosH0XyBh62pNcaLxMxYol9eg47/RFQcLBFB8BQa6F+ZXD3xp3xfOzgdeZb9ENa0+Rub5DRdBlv1hAsW2E/40FGFEtxyGKUHrGQ9iw1nvwg==',
+    'HTTP_HOST' => 'viethung.minhhien.com.vn',
+    'HTTP_ORIGIN' => 'https://viethung.minhhien.com.vn',
+    'HTTP_REFERER' => 'https://viethung.minhhien.com.vn/index.php?r=tai-chinh%2Findex',
+    'HTTP_SEC_CH_UA' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_FETCH_DEST' => 'empty',
+    'HTTP_SEC_FETCH_MODE' => 'cors',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'mQWI7YVDHUwO7YjaocjUN4-zLnLqMEeFwzW7Mdc3IuLzb8Se6QdneDqE-Zv4ipZu5_pcB9gdD-iieu8D4n9Aqw==',
+    'HTTP_X_FORWARDED_FOR' => '14.175.39.148',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php71/root/etc:/opt/cpanel/ea-php71/root/etc/php.d:.',
+    'QUERY_STRING' => 'r=tai-chinh/load',
+    'REDIRECT_STATUS' => '200',
+    'REMOTE_ADDR' => '162.158.118.42',
+    'REMOTE_PORT' => '40822',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/index.php?r=tai-chinh/load',
+    'SCRIPT_FILENAME' => '/home/minhhiencom/public_html/viethung/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '148.66.133.222',
+    'SERVER_ADMIN' => 'webmaster@viethung.minhhien.com.vn',
+    'SERVER_NAME' => 'viethung.minhhien.com.vn',
+    'SERVER_PORT' => '443',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SSL_TLS_SNI' => 'viethung.minhhien.com.vn',
+    'TZ' => 'Asia/Ho_Chi_Minh',
+    'UNIQUE_ID' => 'YHEF8osWdSA0q9i6t6XpNAAAAIM',
+    'protossl' => 's',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1618019826.185060024261474609375,
+    'REQUEST_TIME' => 1618019826,
+    'argv' => [
+        'r=tai-chinh/load',
+    ],
+    'argc' => 1,
+]
+[10-Apr-2021 08:57:10 Asia/Ho_Chi_Minh] An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/helpers/BaseVarDumper.php on line 38. in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/helpers/BaseVarDumper.php on line 38. in /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/minhhiencom/public_html/viethung/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/minhhiencom/public_html/viethung/index.php(22): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'CONTENT_LENGTH' => '161',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/minhhiencom/public_html/viethung',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTPS' => 'on',
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01',
+    'HTTP_ACCEPT_ENCODING' => 'gzip',
+    'HTTP_ACCEPT_LANGUAGE' => 'vi',
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_CDN_LOOP' => 'cloudflare',
+    'HTTP_CF_CONNECTING_IP' => '14.175.39.148',
+    'HTTP_CF_IPCOUNTRY' => 'VN',
+    'HTTP_CF_RAY' => '63d85ce34abe0b00-NRT',
+    'HTTP_CF_REQUEST_ID' => '095b18620e00000b00d293e000000001',
+    'HTTP_CF_VISITOR' => '{"scheme":"https"}',
+    'HTTP_CONNECTION' => 'Keep-Alive',
+    'HTTP_COOKIE' => '_identity-backend=e561b89ad441fda887c6a837c26040774e213a5d9e9f3f366f5fe02d983b23b3a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B%7D; _ga=GA1.3.1225740079.1617357035; _fbp=fb.2.1617357036343.1781882541; __gads=ID=64acf5dbf48f8d32-2249f79df1c60042:T=1617357036:RT=1617357036:S=ALNI_MZjMOkzwsKpQfrMIbpkV1MhkU1U2w; __cfduid=d263c719ba636a088fdfd95639c958a311617785811; advanced-backend=b4c8680fc59be3667c39f10fe8af1c52; _csrf-backend=4fc8cc1ec33a2f919fc62d3e136b9903708630a249cf03dc3a613d5c33833b59a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22jjLslDz44iqAYBBYhIru2-HmaOT25HbI%22%3B%7D; __cf_bm=32a7d8714a787bfd30344ae95bb649a767ed03c8-1618019090-1800-ASnBQZdQIDvLYxCCqHxGtCYHosH0XyBh62pNcaLxMxYol9eg47/RFQcLBFB8BQa6F+ZXD3xp3xfOzgdeZb9ENa0+Rub5DRdBlv1hAsW2E/40FGFEtxyGKUHrGQ9iw1nvwg==',
+    'HTTP_HOST' => 'viethung.minhhien.com.vn',
+    'HTTP_ORIGIN' => 'https://viethung.minhhien.com.vn',
+    'HTTP_REFERER' => 'https://viethung.minhhien.com.vn/index.php?r=tai-chinh%2Findex',
+    'HTTP_SEC_CH_UA' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+    'HTTP_SEC_CH_UA_MOBILE' => '?0',
+    'HTTP_SEC_FETCH_DEST' => 'empty',
+    'HTTP_SEC_FETCH_MODE' => 'cors',
+    'HTTP_SEC_FETCH_SITE' => 'same-origin',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36',
+    'HTTP_X_CSRF_TOKEN' => 'mQWI7YVDHUwO7YjaocjUN4-zLnLqMEeFwzW7Mdc3IuLzb8Se6QdneDqE-Zv4ipZu5_pcB9gdD-iieu8D4n9Aqw==',
+    'HTTP_X_FORWARDED_FOR' => '14.175.39.148',
+    'HTTP_X_FORWARDED_PROTO' => 'https',
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+    'PATH' => '/bin:/usr/bin',
+    'PHP_INI_SCAN_DIR' => '/opt/cpanel/ea-php71/root/etc:/opt/cpanel/ea-php71/root/etc/php.d:.',
+    'QUERY_STRING' => 'r=tai-chinh/load',
+    'REDIRECT_STATUS' => '200',
+    'REMOTE_ADDR' => '162.158.118.42',
+    'REMOTE_PORT' => '45790',
+    'REQUEST_METHOD' => 'POST',
+    'REQUEST_SCHEME' => 'https',
+    'REQUEST_URI' => '/index.php?r=tai-chinh/load',
+    'SCRIPT_FILENAME' => '/home/minhhiencom/public_html/viethung/index.php',
+    'SCRIPT_NAME' => '/index.php',
+    'SERVER_ADDR' => '148.66.133.222',
+    'SERVER_ADMIN' => 'webmaster@viethung.minhhien.com.vn',
+    'SERVER_NAME' => 'viethung.minhhien.com.vn',
+    'SERVER_PORT' => '443',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SSL_TLS_SNI' => 'viethung.minhhien.com.vn',
+    'TZ' => 'Asia/Ho_Chi_Minh',
+    'UNIQUE_ID' => 'YHEF9kFjQIfBg5RcFj@pNwAAAAM',
+    'protossl' => 's',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1618019830.53112697601318359375,
+    'REQUEST_TIME' => 1618019830,
+    'argv' => [
+        'r=tai-chinh/load',
+    ],
+    'argc' => 1,
+]
