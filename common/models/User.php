@@ -134,10 +134,12 @@ class User extends ActiveRecord implements IdentityInterface
     }
     public static function isAccess1($uid)
     {
+        
         if ($uid==1){
             return true;
         }
-        $sever =explode('/',$_SERVER['REDIRECT_URL']);
+        // $_SERVER['REDIRECT_URL'] = '/admin-api/chi-tiet-user';        
+        $sever = explode('/',$_SERVER['REDIRECT_URL']);
         if (count($sever)!==3){
             return false;
         }
