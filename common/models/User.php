@@ -138,7 +138,8 @@ class User extends ActiveRecord implements IdentityInterface
         if ($uid==1){
             return true;
         }
-        // $_SERVER['REDIRECT_URL'] = '/admin-api/chi-tiet-user';        
+        
+        if(!isset($_SERVER['REDIRECT_URL'])) $_SERVER['REDIRECT_URL'] = '/admin-api/chi-tiet-user';        
         $sever = explode('/',$_SERVER['REDIRECT_URL']);
         if (count($sever)!==3){
             return false;
