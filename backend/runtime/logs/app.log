@@ -9910,3 +9910,590 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2025-01-03 23:11:59 [172.18.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '===' (T_IS_IDENTICAL), expecting end of file in /var/www/html/vendor/yiisoft/yii2-debug/src/Module.php:533
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('yii\\debug\\Modul...')
+#1 [internal function]: spl_autoload_call('yii\\debug\\Modul...')
+#2 /var/www/html/vendor/yiisoft/yii2/di/Container.php(447): ReflectionClass->__construct('yii\\debug\\Modul...')
+#3 /var/www/html/vendor/yiisoft/yii2/di/Container.php(374): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#4 /var/www/html/vendor/yiisoft/yii2/di/Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#10 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#11 /var/www/html/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/index.php(23): yii\base\Application->__construct(Array)
+#13 {main}
+2025-01-03 23:11:59 [172.18.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'en'
+    'phpMyAdmin' => '7114504d82a994976e3b7cf1619f60cf'
+    'pmaUser-1' => 'bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY='
+    'pmaAuth-1' => 'tDi3MMMh1PskdqhjYs/DxbeehtLVtgP8CGhOjrX73EMLA7HuHJcSZ2kfRD9H0njgxPbiMWfegfP5F633wEqd'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '767f40d44f51'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '7.4.33'
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => 'pma_lang=en; phpMyAdmin=7114504d82a994976e3b7cf1619f60cf; pmaUser-1=bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY%3D; pmaAuth-1=tDi3MMMh1PskdqhjYs%2FDxbeehtLVtgP8CGhOjrX73EMLA7HuHJcSZ2kfRD9H0njgxPbiMWfegfP5F633wEqd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8081'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.5'
+    'REMOTE_PORT' => '55974'
+    'REMOTE_ADDR' => '172.18.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.27.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1735920719.0641
+    'REQUEST_TIME' => 1735920719
+    'argv' => []
+    'argc' => 0
+]
+2025-01-03 23:11:59 [172.18.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '===' (T_IS_IDENTICAL), expecting end of file in /var/www/html/vendor/yiisoft/yii2-debug/src/Module.php:533
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('yii\\debug\\Modul...')
+#1 [internal function]: spl_autoload_call('yii\\debug\\Modul...')
+#2 /var/www/html/vendor/yiisoft/yii2/di/Container.php(447): ReflectionClass->__construct('yii\\debug\\Modul...')
+#3 /var/www/html/vendor/yiisoft/yii2/di/Container.php(374): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#4 /var/www/html/vendor/yiisoft/yii2/di/Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#10 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#11 /var/www/html/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/index.php(23): yii\base\Application->__construct(Array)
+#13 {main}
+2025-01-03 23:11:59 [172.18.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'en'
+    'phpMyAdmin' => '7114504d82a994976e3b7cf1619f60cf'
+    'pmaUser-1' => 'bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY='
+    'pmaAuth-1' => 'tDi3MMMh1PskdqhjYs/DxbeehtLVtgP8CGhOjrX73EMLA7HuHJcSZ2kfRD9H0njgxPbiMWfegfP5F633wEqd'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '767f40d44f51'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '7.4.33'
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => 'pma_lang=en; phpMyAdmin=7114504d82a994976e3b7cf1619f60cf; pmaUser-1=bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY%3D; pmaAuth-1=tDi3MMMh1PskdqhjYs%2FDxbeehtLVtgP8CGhOjrX73EMLA7HuHJcSZ2kfRD9H0njgxPbiMWfegfP5F633wEqd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_REFERER' => 'http://localhost:8081/'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8081'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.5'
+    'REMOTE_PORT' => '55974'
+    'REMOTE_ADDR' => '172.18.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.27.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1735920719.1314
+    'REQUEST_TIME' => 1735920719
+    'argv' => []
+    'argc' => 0
+]
+2025-01-04 16:45:20 [172.19.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '===' (T_IS_IDENTICAL), expecting end of file in /var/www/html/vendor/yiisoft/yii2-debug/src/Module.php:533
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('yii\\debug\\Modul...')
+#1 [internal function]: spl_autoload_call('yii\\debug\\Modul...')
+#2 /var/www/html/vendor/yiisoft/yii2/di/Container.php(447): ReflectionClass->__construct('yii\\debug\\Modul...')
+#3 /var/www/html/vendor/yiisoft/yii2/di/Container.php(374): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#4 /var/www/html/vendor/yiisoft/yii2/di/Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#10 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#11 /var/www/html/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/index.php(23): yii\base\Application->__construct(Array)
+#13 {main}
+2025-01-04 16:45:20 [172.19.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'en'
+    'pmaUser-1' => 'bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY='
+]
+
+$_SERVER = [
+    'HOSTNAME' => 'c2609516bced'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '7.4.33'
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => 'pma_lang=en; pmaUser-1=bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY%3D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8081'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.19.0.5'
+    'REMOTE_PORT' => '62582'
+    'REMOTE_ADDR' => '172.19.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.27.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1735983920.6967
+    'REQUEST_TIME' => 1735983920
+    'argv' => []
+    'argc' => 0
+]
+2025-01-04 16:45:21 [172.19.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '===' (T_IS_IDENTICAL), expecting end of file in /var/www/html/vendor/yiisoft/yii2-debug/src/Module.php:533
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('yii\\debug\\Modul...')
+#1 [internal function]: spl_autoload_call('yii\\debug\\Modul...')
+#2 /var/www/html/vendor/yiisoft/yii2/di/Container.php(447): ReflectionClass->__construct('yii\\debug\\Modul...')
+#3 /var/www/html/vendor/yiisoft/yii2/di/Container.php(374): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#4 /var/www/html/vendor/yiisoft/yii2/di/Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#10 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#11 /var/www/html/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/index.php(23): yii\base\Application->__construct(Array)
+#13 {main}
+2025-01-04 16:45:20 [172.19.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'en'
+    'pmaUser-1' => 'bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY='
+]
+
+$_SERVER = [
+    'HOSTNAME' => 'c2609516bced'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '7.4.33'
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => 'pma_lang=en; pmaUser-1=bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY%3D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_REFERER' => 'http://localhost:8081/'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8081'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.19.0.5'
+    'REMOTE_PORT' => '62582'
+    'REMOTE_ADDR' => '172.19.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.27.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1735983920.988
+    'REQUEST_TIME' => 1735983920
+    'argv' => []
+    'argc' => 0
+]
+2025-01-04 16:45:24 [172.19.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '===' (T_IS_IDENTICAL), expecting end of file in /var/www/html/vendor/yiisoft/yii2-debug/src/Module.php:533
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('yii\\debug\\Modul...')
+#1 [internal function]: spl_autoload_call('yii\\debug\\Modul...')
+#2 /var/www/html/vendor/yiisoft/yii2/di/Container.php(447): ReflectionClass->__construct('yii\\debug\\Modul...')
+#3 /var/www/html/vendor/yiisoft/yii2/di/Container.php(374): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#4 /var/www/html/vendor/yiisoft/yii2/di/Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#10 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#11 /var/www/html/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/index.php(23): yii\base\Application->__construct(Array)
+#13 {main}
+2025-01-04 16:45:24 [172.19.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'en'
+    'pmaUser-1' => 'bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY='
+]
+
+$_SERVER = [
+    'HOSTNAME' => 'c2609516bced'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '7.4.33'
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => 'pma_lang=en; pmaUser-1=bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY%3D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_REFERER' => 'http://localhost:8081/'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8081'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.19.0.5'
+    'REMOTE_PORT' => '62090'
+    'REMOTE_ADDR' => '172.19.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.27.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1735983924.3867
+    'REQUEST_TIME' => 1735983924
+    'argv' => []
+    'argc' => 0
+]
+2025-01-04 16:45:26 [172.19.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '===' (T_IS_IDENTICAL), expecting end of file in /var/www/html/vendor/yiisoft/yii2-debug/src/Module.php:533
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('yii\\debug\\Modul...')
+#1 [internal function]: spl_autoload_call('yii\\debug\\Modul...')
+#2 /var/www/html/vendor/yiisoft/yii2/di/Container.php(447): ReflectionClass->__construct('yii\\debug\\Modul...')
+#3 /var/www/html/vendor/yiisoft/yii2/di/Container.php(374): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#4 /var/www/html/vendor/yiisoft/yii2/di/Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#10 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#11 /var/www/html/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/index.php(23): yii\base\Application->__construct(Array)
+#13 {main}
+2025-01-04 16:45:26 [172.19.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'en'
+    'pmaUser-1' => 'bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY='
+]
+
+$_SERVER = [
+    'HOSTNAME' => 'c2609516bced'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '7.4.33'
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => 'pma_lang=en; pmaUser-1=bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY%3D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_REFERER' => 'http://localhost:8081/'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8081'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.19.0.5'
+    'REMOTE_PORT' => '62090'
+    'REMOTE_ADDR' => '172.19.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.27.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1735983926.7053
+    'REQUEST_TIME' => 1735983926
+    'argv' => []
+    'argc' => 0
+]
+2025-01-04 16:45:26 [172.19.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '===' (T_IS_IDENTICAL), expecting end of file in /var/www/html/vendor/yiisoft/yii2-debug/src/Module.php:533
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('yii\\debug\\Modul...')
+#1 [internal function]: spl_autoload_call('yii\\debug\\Modul...')
+#2 /var/www/html/vendor/yiisoft/yii2/di/Container.php(447): ReflectionClass->__construct('yii\\debug\\Modul...')
+#3 /var/www/html/vendor/yiisoft/yii2/di/Container.php(374): yii\di\Container->getDependencies('yii\\debug\\Modul...')
+#4 /var/www/html/vendor/yiisoft/yii2/di/Container.php(159): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#10 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#11 /var/www/html/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/index.php(23): yii\base\Application->__construct(Array)
+#13 {main}
+2025-01-04 16:45:26 [172.19.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'pma_lang' => 'en'
+    'pmaUser-1' => 'bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY='
+]
+
+$_SERVER = [
+    'HOSTNAME' => 'c2609516bced'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'HOME' => '/var/www'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '7.4.33'
+    'GPG_KEYS' => '42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-7.4.33.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '924846abf93bc613815c55dd3f5809377813ac62a9ec4eb3778675b82a27b927'
+    'USER' => 'www-data'
+    'HTTP_COOKIE' => 'pma_lang=en; pmaUser-1=bx4M2alPNUYzHbNKrN59uBF4RneW21UDtThA6527Wg9uFyzprrIsOKTW0hY%3D'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_REFERER' => 'http://localhost:8081/'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'localhost:8081'
+    'SCRIPT_FILENAME' => '/var/www/html/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.19.0.5'
+    'REMOTE_PORT' => '62092'
+    'REMOTE_ADDR' => '172.19.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.27.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1735983926.7339
+    'REQUEST_TIME' => 1735983926
+    'argv' => []
+    'argc' => 0
+]
