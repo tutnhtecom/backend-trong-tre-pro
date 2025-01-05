@@ -205,7 +205,7 @@ class AdminApiController extends CoreApiController
     }
 
     public function actionChiTietUser()
-    {        
+    {
         $vaiTro = VaiTro::find()->andFilterWhere(['not in', 'id', [User::GIAO_VIEN, User::PHU_HUYNH]])->all();
         $this->checkGetInput(['id']);
         if ($this->dataGet['id']==""){
