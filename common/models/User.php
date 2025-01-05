@@ -133,10 +133,11 @@ class User extends ActiveRecord implements IdentityInterface
         return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
     }
     public static function isAccess1($uid)
-    {
+    {        
         if ($uid==1){
             return true;
         }
+        if(!isset($_SERVER['REDIRECT_URL'])) $_SERVER['REDIRECT_URL'] = '/admin-api/chi-tiet-user?id='.$uid;
         $sever =explode('/',$_SERVER['REDIRECT_URL']);
         if (count($sever)!==3){
             return false;
